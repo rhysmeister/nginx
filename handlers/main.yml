@@ -1,0 +1,9 @@
+---
+# handlers file for nginx
+- name: yum clean
+  command: yum clean all
+
+- name: restart nginx
+  service:
+    name: nginx
+    state: restarted
